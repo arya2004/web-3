@@ -12,26 +12,27 @@ async function main() {
   const SimpleStorageFactory = await ethers.getContractFactory("SimpleStorage")
   console.log("Deploying contract...")
   const simpleStorage = await SimpleStorageFactory.deploy()
-  await simpleStorage.deployed()
-  console.log(`Deployed contract to: ${simpleStorage.address}`)
-  // what happens when we deploy to our hardhat network?
-  if (network.config.chainId === 11155111 && process.env.ETHERSCAN_API_KEY) {
-    console.log("Waiting for block confirmations...")
-    await simpleStorage.deployTransaction.wait(6)
-    await verify(simpleStorage.address, [])
-  }
+  const deploymentTransaction = await simpleStorage.deploymentTransaction();
+  console.log("\ndeployed");
+  console.log(deploymentTransaction);
+  // // what happens when we deploy to our hardhat network?
+  // if (network.config.chainId === 11155111 && process.env.ETHERSCAN_API_KEY) {
+  //   console.log("Waiting for block confirmations...")
+  //   await simpleStorage.deployTransaction.wait(6)
+  //   await verify(simpleStorage.address, [])
+  // }
 
-  const currentValue = await simpleStorage.retrieve()
-  console.log(`Current Value is: ${currentValue}`)
+  // const currentValue = await simpleStorage.retrieve()
+  // console.log(`Current Value is: ${currentValue}`)
 
-  // Update the current value
-  const transactionResponse = await simpleStorage.store(7)
-  await transactionResponse.wait(1)
-  const updatedValue = await simpleStorage.retrieve()
-  console.log(`Updated Value is: ${updatedValue}`)
+  // // Update the current value
+  // const transactionResponse = await simpleStorage.store(7)
+  // await transactionResponse.wait(1)
+  // const updatedValue = await simpleStorage.retrieve()
+  // console.log(`Updated Value is: ${updatedValue}`)
 }
 
-// async function verify(contractAddress, args) {
+async function verify(contractAddress, args) {
 const verify = async (contractAddress, args) => {
   console.log("Verifying contract...")
   try {
@@ -46,7 +47,7 @@ const verify = async (contractAddress, args) => {
       console.log(e)
     }
   }
-}
+}}
 
 // main
 main()
