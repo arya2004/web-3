@@ -1,0 +1,56 @@
+>btc is turing incomplete
+>cant read data from real world. Blockchain are deterministc. This is ORacle Problem
+>ORacle run external computation. Gives a hybrid smart contract
+> CHainLink is one of oracle
+
+>smart contract: a set of instructions deployed on a blockchian
+cant be altered, open, auto execute
+
+DAO: decentralized autonomous organizaiotn
+NFT: 
+
+
+https://etherscan.io/ : view address, transacction on chain
+
+Transaction fee = Gas Price x Gas fee
+    node running bchain get paid this fee. based on Gas used
+
+Gas PRice: 
+    cost per unit of gas spent.
+    Changes.
+    more transactions -> more busy chan -> more gas fee
+
+________________________
+https://andersbrownworth.com/blockchain/
+
+ETH uses KEccak-256 algo
+
+
+nonce(no of transactions): a variable value  to be found. it is hashed with data.
+ex: nonce+ data = Hash
+adjust nonce to make Hash start with 0x0000
+
+Genesis block : first block in chain 
+
+peer to peer chain:
+all chain[i] have same hash
+
+Mining: finding solution to blockchain
+
+Publuc key: elepticaal curve digital signature algo
+
+signature: private key used to sign. Public to verify 
+public key makes the address on chain
+
+1 ether = 1B Gwei = 10^9B wei
+some ether burns in txn
+
+________________________
+consensus: mechanism used to reached on state in bchain
+chain selection or Sybil resisant algo
+
+2 Sybil resisant algo
+
+Proof of werk
+
+Proof of stake
