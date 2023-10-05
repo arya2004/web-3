@@ -54,3 +54,14 @@ chain selection or Sybil resisant algo
 Proof of werk
 
 Proof of stake
+________________________
+> every contract haas address
+> deploing contract = sending a transaction
+________________________
+solidity data
+stack
+memory: exist temp, can be modifird
+storage: exist permemtly
+calldata: exist temp, cant modifird
+code
+logs
