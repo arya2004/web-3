@@ -1,0 +1,25 @@
+{
+  "name": "next_smart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "moralis-v1": "^1.13.0",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-moralis": "^1.4.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}
