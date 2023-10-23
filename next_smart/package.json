@@ -13,7 +13,8 @@
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-moralis": "^1.4.2"
+    "react-moralis": "^1.4.2",
+    "web3uikit": "^1.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10",
