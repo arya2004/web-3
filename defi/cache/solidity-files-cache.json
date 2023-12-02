@@ -172,10 +172,10 @@
         "ILendingPool"
       ]
     },
-    "C:\\Users\\arya2\\Documents\\Web3\\defi\\contracts\\interfaces\\ILendingPoolAddressesProvider.sol": {
-      "lastModificationDate": 1701525311753,
-      "contentHash": "349b2b29065b6e4360bfc83355d0f76c",
-      "sourceName": "contracts/interfaces/ILendingPoolAddressesProvider.sol",
+    "C:\\Users\\arya2\\Documents\\Web3\\defi\\contracts\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1701527104901,
+      "contentHash": "cfa1ae832e2a3e92f2ea334e64b25c70",
+      "sourceName": "contracts/interfaces/IERC20.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
@@ -208,10 +208,52 @@
       },
       "imports": [],
       "versionPragmas": [
-        "0.6.12"
+        "^0.6.6"
       ],
       "artifacts": [
-        "ILendingPoolAddressesProvider"
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\arya2\\Documents\\Web3\\defi\\contracts\\interfaces\\AggregatorV3Interface.sol": {
+      "lastModificationDate": 1701527944277,
+      "contentHash": "f2604c84d03a13d7e932ae1217a1cf55",
+      "sourceName": "contracts/interfaces/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
       ]
     }
   }
